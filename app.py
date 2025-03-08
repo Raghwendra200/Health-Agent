@@ -6,7 +6,7 @@ import os
 
 # Load environment variables
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyD9poEyC5txhBbSYABuFVbS-dzdr7mzE_Y"))
 
 # Function to load Google Gemini Pro Vision API and get response
 def get_gemini_response(input, image, prompt):
