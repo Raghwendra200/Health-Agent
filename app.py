@@ -6,11 +6,11 @@ import os
 
 # Load environment variables
 load_dotenv()
-genai.configure(api_key=os.getenv("AIzaSyD9poEyC5txhBbSYABuFVbS-dzdr7mzE_Y"))
+genai.configure(api_key=os.getenv("AIzaSyBTwr_xwsZVjF0hW4NcZ5kAi_W-hKAhGKk"))
 
 # Function to load Google Gemini Pro Vision API and get response
 def get_gemini_response(input, image, prompt):
-    model = genai.GenerativeModel('gemini-2.0-flash-exp')
+    model = genai.GenerativeModel('gemini-2.5 pro experimental 03-25')
     response = model.generate_content([input, image[0], prompt])
     return response.text
 
